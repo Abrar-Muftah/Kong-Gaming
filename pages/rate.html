@@ -72,6 +72,8 @@
           <li><a href="merch.html">Merch</a></li>
           <li><a href="forum.html">Forum</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="rate.html">Rate</a></li>
         </ul>
       </div>
     </nav>
@@ -82,7 +84,7 @@
       <div class="container">
         <div class="contact-message col-md-6 col-lg-8" data-aos="fade-up">
           <h3>Rate the Game.</h3>
-          <form id="contact" method="post">
+          <form action="../index.html" id="contact" method="post">
             <div class="form-row">
               <div class="col-lg-6 form-group">
                 <input type="text" required name="name" class="form-control" id="name" placeholder="First Name" />
@@ -95,16 +97,33 @@
             </div>
 
             <!-- DROP DOWN FOR THE GAME -->
-            <div class="form-group">
+            <div class="form-group mb-5">
               <input type="text" required class="form-control" name="Email" id="Email" placeholder="Email" />
               <div class="required"></div>
             </div>
 
-            <div class="form-group">
-              <input required type="number" class="form-control" name="subject" id="subject" placeholder="Rate the from 1/10" />
-              <div class="required"></div>
+            <div class="form-row mb-0">
+              <div class="col-lg-9 form-group">
+                <div class="form-group">
+                  <select class="form-control" aria-label="Default select example">
+                    <option selected>Choose a game</option>
+                    <option value="games">Overwatch</option>
+                    <option value="games">Gta auto V</option>
+                    <option value="games">Valorant</option>
+                    <option value="games">Minecraft</option>
+                    <option value="games">csgo</option>
+                    <option value="games">assasins creed</option>
+                    <option value="games">Overwatch halloween</option>
+                    <option value="games">spiderman</option>
+                    <option value="games">cyberpunk</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3 form-group">
+                <input required type="number" class="form-control" name="subject" id="subject" placeholder="Rate 1-10" />
+                <div class="required"></div>
+              </div>
             </div>
-
             <div class="form-group">
               <textarea class="form-control" rows="10" name="message" placeholder="Review"></textarea>
               <div class="required"></div>
@@ -258,5 +277,6 @@
     <script src="../vendors/counterup/counterup.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/games.js"></script>
+    <script src="../js/rate.js"></script>
   </body>
 </html>
